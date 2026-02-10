@@ -23,7 +23,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.title("⚡ ELECTREX: Configurazione Analogica & Digitale")
+st.title("⚡ Configurazione Analogica & Digitale")
 st.info("Calcolo parametri di configurazione per ingressi analogici e digitali.")
 
 # Creazione delle schede (Tabs)
