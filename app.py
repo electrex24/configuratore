@@ -87,16 +87,16 @@ with tab_dig:
     with st.expander("Rapporti e Costanti", expanded=True):
         c1, c2 = st.columns(2)
         with c1:
-            ta_p = st.number_input("TA Primario", value=100, min_value=1.0)
-            ta_s = st.number_input("TA Secondario", value=5, min_value=1.0)
+            ta_p = st.number_input("TA Primario", value=100.0, min_value=1.0)
+            ta_s = st.number_input("TA Secondario", value=5.0, min_value=1.0)
         with c2:
-            tv_p = st.number_input("TV Primario", value=15000, min_value=1.0)
-            tv_s = st.number_input("TV Secondario", value=100, min_value=1.0)
+            tv_p = st.number_input("TV Primario", value=15000.0, min_value=1.0)
+            tv_s = st.number_input("TV Secondario", value=100.0, min_value=1.0)
             
     with st.expander("Dati Processo"):
-        imp_unita = st.number_input(f"Impulsi per {u_nome}", value=10000)
-        val_ist = st.number_input(f"Valore Istantaneo ({u_nome}/h)", value=1000)
-        t_deriv_min = st.number_input("Finestra Derivata (minuti)", value=1)
+        imp_unita = st.number_input(f"Impulsi per {u_nome}", value=10000.0)
+        val_ist = st.number_input(f"Valore Istantaneo ({u_nome}/h)", value=1000.0)
+        t_deriv_min = st.number_input("Finestra Derivata (minuti)", value=1.0)
         
     # Funzionalità richiesta: conversione peso in uscita
     sc_dig_out = st.selectbox(
