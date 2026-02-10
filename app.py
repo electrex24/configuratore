@@ -133,12 +133,12 @@ with tab_dig:
             st.subheader("Risultati Digitale")
             r_col1, r_col2 = st.columns(2)
             
-            r_col1.write(f"**Rapporto K:** {k_tot:.2f}")
-            r_col1.error(f"**Peso Impulso:** {peso_finale:.6f}")
-            r_col1.write(f"**Frequenza:** {freq_hz:.4f} Hz")
+            r_col1.write(f"**Rapporto K:** {k_tot:.0f}")
+            r_col1.error(f"**Peso Impulso:** {peso_finale:.4f}")
+            r_col1.write(f"**Frequenza:** {freq_hz:.2f} Hz")
             
-            r_col2.write(f"**Periodo:** {periodo_ms:.2f} ms")
-            r_col2.write(f"**Tempo ON/OFF:** {t_on_off:.2f} ms")
+            r_col2.write(f"**Periodo:** {periodo_ms:.0f} ms")
+            r_col2.write(f"**Tempo ON/OFF:** {t_on_off:.0f} ms")
             r_col2.warning(f"**Derivata Oraria:** {val_ist:.2f} {u_nome}/h")
             
             st.info(f"Quantità accumulata in {t_deriv_min} min: {quantita_periodo:.4f} {u_nome}")
