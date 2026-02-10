@@ -27,13 +27,13 @@ st.title("⚡ Electrex")
 st.info("Calcolo parametri di configurazione per ingressi analogici e digitali.")
 
 # Creazione delle schede (Tabs)
-tab_ana, tab_dig = st.tabs(["📉 Analogica (4-20mA)", "🔢 Digitale (Impulsi)"])
+tab_ana, tab_dig = st.tabs(["📉 Analogica", "🔢 Digitale"])
 
 # --- SCHEDA ANALOGICA ---
 with tab_ana:
     st.header("Condizionamento Segnale")
     
-    with st.expander("Parametri Elettrici e Scala", expanded=True):
+    with st.expander("Parametri e Scala", expanded=True):
         col1, col2 = st.columns(2)
         with col1:
             r = st.number_input("Resistenza (Ohm)", value=200.0, step=0.1, help="Resistenza di shunt")
@@ -47,7 +47,7 @@ with tab_ana:
         col3, col4 = st.columns(2)
         with col3:
             u_in_tempo = st.selectbox("Base Tempo Ingresso", ["ora (h)", "minuto (min)", "secondo (s)"])
-            u_in_scala = st.selectbox("Scala Unità Ingresso", ["Wh / l / g", "kWh / mc / kg", "MWh / t"])
+            u_in_scala = st.selectbox("Scala Unità Ingresso", ["Wh / l / g", "kWh / mc / kg", "MWh / t"], index=1)
         with col4:
             u_out_scala = st.selectbox("Scala Totale Desiderata", ["Wh / l / g", "kWh / mc / kg", "MWh / t"], index=1)
 
