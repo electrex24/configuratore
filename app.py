@@ -141,7 +141,7 @@ with tab_dig:
             r_col2.write(f"**Tempo ON/OFF:** {t_on_off:.0f} ms")
             r_col2.warning(f"**Derivata Oraria:** {val_ist:.2f} {u_nome}/h")
             
-            st.info(f"Quantità accumulata in {t_deriv_min} min: {quantita_periodo:.4f} {u_nome}")
+            st.info(f"Quantità accumulata in {t_deriv_min} min: {quantita_periodo:.2f} {u_nome}")
             
         except Exception as e:
             st.error(f"Errore: {e}")
