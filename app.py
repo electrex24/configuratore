@@ -23,8 +23,8 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.title("⚡ PLC Tool: Analogica & Digitale")
-st.info("Strumento di calcolo per condizionamento segnali e pesi impulso.")
+st.title("⚡ ELECTREX: Configurazione Analogica & Digitale")
+st.info("Calcolo parametri di configurazione per ingressi analogici e digitali.")
 
 # Creazione delle schede (Tabs)
 tab_ana, tab_dig = st.tabs(["📉 Analogica (4-20mA)", "🔢 Digitale (Impulsi)"])
