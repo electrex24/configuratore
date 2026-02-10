@@ -24,14 +24,14 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 st.title("⚡ Electrex")
-st.info("Calcolo parametri di configurazione per ingressi analogici e digitali.")
+st.info("Configurazione ingressi analogici e digitali.")
 
 # Creazione delle schede (Tabs)
 tab_ana, tab_dig = st.tabs(["📉 Analogica", "🔢 Digitale"])
 
 # --- SCHEDA ANALOGICA ---
 with tab_ana:
-    st.header("Condizionamento Segnale")
+    st.header("Parametri")
     
     with st.expander("Parametri e Scala", expanded=True):
         col1, col2 = st.columns(2)
@@ -80,7 +80,7 @@ with tab_ana:
 
 # --- SCHEDA DIGITALE ---
 with tab_dig:
-    st.header("Calcolo parametri")
+    st.header("Parametri")
     
     u_nome = st.text_input("Unità di misura (es. mc, litri, kg, kWh)", "kWh")
     
